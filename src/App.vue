@@ -1,26 +1,25 @@
 <template>
   <div id="app">
-  <myheader></myheader>
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <el-button @click.native="startHacking">Let's do it</el-button>
-<hello></hello>
-
+    <myheader></myheader>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import myheader from './components/Nav.vue'
 import hello from './components/Hello.vue'
+import test from './components/test.vue'
+import testtt from './components/testtt.vue'
+
 export default {
   data () {
     return {
-      msg: 'Use Vue 2.0 Today!'
+      msg: 'vue + vuex by huang!'
     }
   },
   name: 'app',
   components: {
-    myheader, hello
+    myheader, hello,test,testtt
   },
   methods: {
     startHacking () {
@@ -32,6 +31,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>

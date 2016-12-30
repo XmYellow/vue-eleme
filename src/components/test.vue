@@ -1,23 +1,18 @@
 <template>
-    <div class="hello">
+    <div class="test">
         <h1>{{ msg }}</h1>
-        <counter></counter>
     </div>
 
 </template>
 
 <script>
-    import counter from './Counter.vue'
 
     export default {
-        name: 'hello',
+        name: 'test',
         data () {
             return {
-                msg: 'this is my vuex'
+                msg: 'this is my test'
             }
-        },
-        components: {
-            counter
         }
     }
 </script>
